@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ghost Access Terminal</title>
+
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="terminal-container">
+  <div class="terminal">
+
+    <div class="top-bar">
+      <div class="dots">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+      </div>
+
+      <div class="glow">GHOST_ACCESS_TERMINAL</div>
+
+      <div id="statusText">SECURE CONNECTION</div>
+    </div>
+
+    <div class="terminal-body" id="terminal"></div>
+
+  </div>
+</div>
+
+
+<div id="loginScreen" class="login-screen">
+  <div class="login-box">
+    <h2>ACCESS LOGIN</h2>
+
+    <input id="username" placeholder="username" />
+    <input id="password" type="password" placeholder="password" />
+
+    <button onclick="login()">ENTER</button>
+
+    <p id="loginError"></p>
+  </div>
+</div>
+
+<script src="matrix.js"></script>
+<script src="terminal.js"></script>
+
+</body>
+</html>
